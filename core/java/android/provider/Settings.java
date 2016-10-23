@@ -4210,10 +4210,19 @@ public final class Settings {
          * the setting value. See an example above.
          */
 
-         /**
-         * Show or hide clock
-         * 0 - hide
-         * 1 - show (default)
+	/**
+         * Whether allowing pocket service to register sensors and dispatch informations.
+         *   0 = disabled
+         *   1 = enabled
+         * @author Carlo Savignano
+         * @hide
+         */
+        public static final String POCKET_JUDGE = "pocket_judge";
+
+	/**
+	 * Show or hide clock
+	 * 0 - hide
+	 * 1 - show (default)
          * @hide
          */
         public static final String STATUS_BAR_CLOCK = "status_bar_clock";
@@ -5189,6 +5198,8 @@ public final class Settings {
             PRIVATE_SETTINGS.add(SCREEN_STATE_MOBILE_DATA);
             PRIVATE_SETTINGS.add(SCREEN_STATE_OFF_DELAY);
             PRIVATE_SETTINGS.add(SCREEN_STATE_ON_DELAY);
+            // Pocket mode handler.
+            PRIVATE_SETTINGS.add(POCKET_JUDGE);
         }
 
         /**
